@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>爱好</title>
+<style>
+body{
+        background-image: url(beijing2.jpeg);/*设置主页背景图片*/
+        background-repeat: no-repeat; /* 设置背景不重复 */
+        background-size: cover; /* 设置背景充满整个页面 */
+    }
+    #div1{
+        border: dotted;  
+        /* 边框为点线 */
+        border-color:white;
+        /* 边框颜色为白色 */
+        color:white;
+        /* 字体颜色为白色 */
+    }
+    #div12{
+        position: absolute; /* 绝对定位 */
+        top: 25px;/* 距离顶部25px */
+        left: 1160px;/* 距离左边1000px */
+    }
+    #div2{
+        height: 500px;
+        /* 垂直高度500px */
+        border:double; 
+        /* 边框为双线 */
+        border-color: aliceblue;
+        /* 边框颜色为白色 */
+        color: aliceblue;
+        /* 字体颜色为白色 */
+        text-align: center;
+        /* 文本水平居中 */
+    #xie{
+        font-style: italic;
+        /* 字体为斜体 */
+    }
+</style>
+</head>
+<body>
+<div id="div1">
+    <div id="div11">
+        <p>&nbsp&nbsp&nbsp爱好</p>
+        <!-- 在爱好前加3个空格 -->
+    </div>
+    <div id="div12">
+        <select onchange="javascript: window.open(this.options[this.selectedIndex].value);" name="link">
+            <!-- 在选框改变时跳转到新的窗口 -->
+            <option ></option>
+            <option value="home.html">主页</option>
+            <option value="自我介绍.html">自我介绍</option>
+            <option value="活动经历.html">活动经历</option>
+            <option value="近期目标.html">近期目标</option>
+            <option value="联系方式.html">联系方式</option>
+            <option value="留言.html">给我留言</option>
+        </select>
+        <!-- 设置下拉框 -->
+    </div>
+</div><br>
+<div id="div2">
+    <p>听音乐</p>
+    <p>看电影</p>
+    <p>上网</p>
+    <p>唱歌</p>
+    <p>手工</p>
+</div>
+</body>
+</html>
